@@ -47,7 +47,7 @@ switch (script) {
   default:
     console.log(
       boxen(
-        chalk`{bold Unknown script {yellow ${script}}}\nPerhaps you need to update springernature-frontend-build?`,
+        chalk`{bold Unknown script {yellow ${script}}}\nPerhaps you need to update stunning-lamp?`,
         { padding: 1, margin: 1, borderStyle: "double" }
       )
     );

@@ -22,9 +22,9 @@ const ownPackage = require(ownPackageFile);
 const webpackEntriesExist = fs.existsSync(webpackEntries);
 
 appPackage.scripts = Object.assign({}, appPackage.scripts, {
-  init: "springernature-frontend-build init",
-  build: "springernature-frontend-build build --env production",
-  dev: "springernature-frontend-build build --env development"
+  init: "stunning-lamp init",
+  build: "stunning-lamp build --env production",
+  dev: "stunning-lamp build --env development"
 });
 
 //TODO: add @springernature/eslint-config to this list
