@@ -4,5 +4,5 @@ map.set("greetings", "Dear");
 console.log(
   `${map.get("greetings")} ${map.get(
     "name"
-  )} hope you like this example better!`
+  )}, hope you like this example better!`
 );
