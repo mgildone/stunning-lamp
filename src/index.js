@@ -1,4 +1,4 @@
-var map = new Map();
+const map = new Map();
 map.set("name", "Dave");
 map.set("greetings", "Dear");
 console.log(
