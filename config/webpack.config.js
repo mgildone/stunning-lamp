@@ -4,39 +4,8 @@ const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
 const tasks = require("./webpack.tasks");
 const { tasksConfig, myFunc } = require("../utils/tasks");
 const { uniqueArray } = require("../utils/array");
-const { pipe } = require("../utils/fn");
+const { pipe } = require("../utils/fp");
 const smp = new SpeedMeasurePlugin();
-
-// const commonConfig = isEnvDevelopment =>
-//   merge([
-//     {
-//       plugins: [
-//         new ManifestPlugin({
-//           fileName: "assets.json"
-//         })
-//       ],
-//       optimization: {
-//         usedExports: true,
-//         splitChunks: {
-//           chunks: "all",
-//           cacheGroups: {
-//             vendor: {
-//               test: /[\\\/]node_modules[\\\/]/,
-//               name: "vendors",
-//               chunks: "all"
-//             }
-//           }
-//         }
-//       }
-//     },
-//     tasks.clean(),
-//     tasks.loadJavaScript(),
-//     tasks.lintJavaScript(),
-//     tasks.extractCSS(isEnvDevelopment),
-//     tasks.lintSass(),
-//     tasks.loadImages(isEnvDevelopment),
-//     tasks.loadFonts(isEnvDevelopment)
-//   ]);
 
 module.exports = (
   webpackEnv,
